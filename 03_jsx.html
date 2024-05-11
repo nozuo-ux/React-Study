@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- ract cdn -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Bable CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- jsx语法 -->
+    <div id="root">
+
+    </div>
+  
+    
+    <script type="text/babel">
+        //jsx在js
+        let now  = new Date().toLocaleTimeString();
+        let h3 = (<h3 className="danger" id="time">当前时间:xxxx </h3>);
+
+        ReactDom.render(h3,root);
+        console.log(typeof ReactDOM, ReactDOM);
+
+   </script>
+</body>
+</html>
